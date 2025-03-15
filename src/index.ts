@@ -79,13 +79,16 @@ let metric:Metric = 'cm';
 
 // null and undefined
 
-function greet(name: string | null | undefined){
+function greet (name: string | null | undefined){
     if(name){
         console.log(name.toUpperCase)
     }else{
         console.log('Hola!!!')
     }
 }
+
+greet('John'); 
+
 
 // optional chaining
 

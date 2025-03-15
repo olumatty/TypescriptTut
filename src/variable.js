@@ -1,0 +1,20 @@
+//Note: When using a function it mandated to indicate the data type of the return value of the function. i.e ANY type is not allowed.//
+// number //
+function addTwo(a, b) {
+    return a + b;
+}
+addTwo(2, 3);
+// string//
+function greeters(name) {
+    return 'Hello' + name;
+}
+greeters('John');
+function signUp(name, password, isPaid) {
+    if (name && isPaid && password.length > 8) {
+        console.log('User signed up');
+    }
+    else {
+        console.log('Error signing up');
+    }
+}
+signUp('John', 'pass', true);
