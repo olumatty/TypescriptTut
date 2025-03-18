@@ -46,4 +46,13 @@ var user = {
     phoneNo: "08023486812",
     isActive: false
 };
-document.write(customerInfo(user));
+console.log(customerInfo(user));
+function logPoint(p) {
+    console.log("This is the corrdinate of the point x" + p.x);
+    console.log("This is the corrdinate of the point y" + p.y);
+}
+logPoint({ x: 3, y: 4 });
+function add(a, b) {
+    return a + b;
+}
+add(2, 3);

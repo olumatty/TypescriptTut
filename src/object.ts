@@ -73,4 +73,41 @@ const user = {
     isActive: false
 };
 
-document.write(customerInfo(user));
+console.log(customerInfo(user));
+
+
+type Points ={
+    x: number,
+    y: number,
+}
+
+function logPoint(p: Points){
+    console.log("This is the corrdinate of the point x" + p.x) 
+    console.log("This is the corrdinate of the point y" + p.y)
+}
+
+logPoint({x: 3, y: 4})
+
+
+
+type New = number;
+
+function add(a: New, b: New): New{
+    return a + b;
+}
+
+add(2,3)
+
+
+//Type and intersection//
+
+type CardNumber = {
+    cardNumber: string;
+}
+
+type CardHolder = {
+    cardHolder: string;
+}
+
+
+type CardInfo = CardNumber & CardHolder;
