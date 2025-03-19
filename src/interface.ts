@@ -27,9 +27,9 @@ const user4 : Userss = {
         return `${user4.name} has started a trial`
 
     },
-    getCoupon:(couponname:"hitesh", value:10) => {
+    getCoupon:(couponname:"caleb", value:10) => {
         return 20;
-}
+    },
 }
 
 console.log(user4)

@@ -10,4 +10,4 @@ var user4 = {
         return 20;
     }
 };
-console.log(user4);
+console.log(user4)
