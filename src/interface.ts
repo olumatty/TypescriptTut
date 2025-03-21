@@ -5,7 +5,7 @@ interface Userss {
     address: string,
     isSubscribed: boolean,
     startTrail():string,
-    getCoupon(couponname:string, value:number):number
+    
 }
 
 interface Userss{
@@ -24,12 +24,10 @@ const user4 : Userss = {
     isSubscribed: true,
     githubtoken: 'hitesh',
     startTrail(){
-        return `${user4.name} has started a trial`
+        return `${this.name} has started a trial`
 
     },
-    getCoupon:(couponname:"caleb", value:10) => {
-        return 20;
-    },
+    
 }
 
 console.log(user4)
@@ -45,9 +43,6 @@ const user5 : Admin = {
         return `${user4.name} has started a trial`
 
     },
-    getCoupon:(couponname:"hitesh", value:10) => {
-        return 20;
-}
 }
 
 console.log(user4)
